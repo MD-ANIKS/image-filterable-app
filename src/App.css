@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background:#28282B;
+  color: #f1f1f1;
+  padding: 0px 9%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header nav ul.nav-links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+header nav ul.nav-links li {
+  list-style-type: none;
+}
+
+header nav ul.nav-links li a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+
+.container{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 9%;
+  width: 100%;
+  gap: 30px;
+  padding-top: 40px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.container p{
+  font-size: 14px;
+}
+
+.search_area{
+  width: 100%;
+  height: 90vh;
+  background: #999999;
+  position: relative;
+}
+
+.search_area input{
+  outline: none;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 15px;
+  font-size: 18px;
+  width: 350px;
+  background-color:  #c5d1d49f;
+  color: #f1f1f1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  position: absolute;
+  z-index: 3;
+
+}
+
+.img_area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.img_area img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.error{
+  width: 100%;
+  height: 90vh;
+  background: #213d44;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.error h1{
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: rgb(14, 194, 218);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error a{
+  font-size: 26px;
+  color: #f1f1f1 !important;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.error a:hover{
+  opacity: 0.8;
+}
+
+
+.nav-links a.active{
+  opacity: 0.8 !important;
 }
