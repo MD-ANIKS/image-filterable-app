@@ -1,3 +1,5 @@
+The "image-filterable-app" repository is a powerful open-source application built for filtering and manipulating images. Developed with an intuitive user interface, this app allows users to upload, apply various filters, and transform images in real-time. With a wide range of filter options and customizable settings, users can enhance, modify, and create stunning visuals effortlessly. Whether you're a photographer, designer, or simply an enthusiast, this repository provides an interactive platform to experiment and unleash your creativity with image filtering and manipulation. Join our community and contribute to this project to expand its capabilities and explore the endless possibilities of image transformation.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
